@@ -35,7 +35,7 @@ jobs:
 
     - name: Merge folders
       run: |
-        cp -r funcy-python/funcy funcy
+        cp -r funcy-python/funcy .
 
     - name: Run stubtest
       run: |
