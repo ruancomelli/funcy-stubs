@@ -27,16 +27,6 @@ jobs:
       run: |
         pip install mypy
 
-    - name: Clone funcy
-      uses: actions/checkout@v3
-      with:
-        repository: Suor/funcy
-        path: funcy-python
-
-    - name: Merge folders
-      run: |
-        cp -r funcy-python/funcy .
-
     - name: Run stubtest
       run: |
-        python -m mypy.stubtest funcy
+        make stubtest
