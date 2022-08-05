@@ -1,0 +1,47 @@
+name: Test Stubs
+on: [push, pull_request]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [
+          '2.7',
+          '3.4',
+          '3.5',
+          '3.6',
+          '3.7',
+          '3.8',
+          '3.9',
+          '3.10'
+        ]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        pip install mypy
+
+    - name: Clone funcy
+      uses: actions/checkout@v3
+      with:
+        repository: Suor/funcy
+        path: funcy-python
+
+    - name: Merge folders
+      run: |
+        cp -r funcy-python/funcy funcy
+
+    - name: Run stubtest
+      run: |
+        python -m mypy.stubtest funcy
