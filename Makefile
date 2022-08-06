@@ -12,5 +12,5 @@ update-funcy:
 		&& git -C $(FUNCY_DIR) checkout tags/$(FUNCY_VERSION)
 
 stubtest: update-funcy
-	cp -r $(FUNCY_STUBS_DIR)/* $(FUNCY_DIR)
-	cd $(TMP) && python -m mypy funcy
+	cp -r $(FUNCY_STUBS_DIR)/* $(FUNCY_DIR)/funcy
+	mypy $(FUNCY_DIR)
