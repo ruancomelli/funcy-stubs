@@ -22,11 +22,9 @@ jobs:
       uses: pdm-project/setup-pdm@main
       with:
         python-version: ${{ matrix.python-version }}
-
+  
     - name: Install dependencies
-      run: |
-        pip install mypy
+      run: pdm install --dev
 
     - name: Run stubtest
-      run: |
-        make stubtest
+      run: make stubtest
