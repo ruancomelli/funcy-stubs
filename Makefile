@@ -11,4 +11,4 @@ update-funcy:
 
 stubtest: update-funcy
 	cp -r $(FUNCY_STUBS_DIR)/* $(FUNCY_DIR)
-	cd $(TMP) && python -m mypy.stubtest funcy
+	cd $(TMP) && python -m mypy funcy
