@@ -17,9 +17,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v4
+  
+    - name: Setup PDM for Python ${{ matrix.python-version }}
+      uses: pdm-project/setup-pdm@main
       with:
         python-version: ${{ matrix.python-version }}
 

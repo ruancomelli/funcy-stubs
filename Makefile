@@ -5,6 +5,8 @@ FUNCY_VERSION = 1.17
 
 FUNCY_STUBS_DIR = funcy-stubs
 
+MYPY = pdm run mypy
+
 update-funcy: 
 	mkdir -p $(TMP)
 	git -C $(FUNCY_DIR) checkout tags/$(FUNCY_VERSION) \
@@ -13,4 +15,4 @@ update-funcy:
 
 stubtest: update-funcy
 	cp -r $(FUNCY_STUBS_DIR)/* $(FUNCY_DIR)/funcy
-	mypy $(FUNCY_DIR)
+	$(MYPY) $(FUNCY_DIR)
