@@ -1,10 +1,11 @@
 import sys
-from collections import Hashable as Hashable
-from collections import Iterable as Iterable
-from collections import Iterator as Iterator
-from collections import Mapping as Mapping
-from collections import Sequence as Sequence
-from collections import Set as Set
+from builtins import range as range
+from collections.abc import Hashable as Hashable
+from collections.abc import Iterable as Iterable
+from collections.abc import Iterator as Iterator
+from collections.abc import Mapping as Mapping
+from collections.abc import Sequence as Sequence
+from collections.abc import Set as Set
 from itertools import filterfalse as filterfalse
 from operator import itemgetter as itemgetter
 from typing import Any, Callable, List, Tuple, Type, TypeVar, Union, overload
