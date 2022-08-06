@@ -1,0 +1,30 @@
+[project]
+name = "funcy-stubs"
+version = "0.1.0"
+description = "Type stubs for funcy"
+authors = [
+    {name = "Ruan Comelli", email = "ruancomelli@gmail.com"},
+]
+dependencies = [
+    "funcy==1.17",
+    "typing-extensions>=3.10.0",
+]
+requires-python = ">=3.7"
+readme = "README.md"
+license = {text = "BSD"}
+
+[project.optional-dependencies]
+
+[tool.pdm.build]
+includes = [
+    "funcy-stubs/**.pyi"
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "mypy>=0.971",
+]
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
