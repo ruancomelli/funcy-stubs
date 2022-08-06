@@ -23,6 +23,7 @@ includes = [
 [tool.pdm.dev-dependencies]
 dev = [
     "mypy>=0.971",
+    "whatever>=0.6",
 ]
 
 [build-system]

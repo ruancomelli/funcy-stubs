@@ -38,9 +38,14 @@ version = "4.3.0"
 requires_python = ">=3.7"
 summary = "Backported and Experimental Type Hints for Python 3.7+"
 
+[[package]]
+name = "whatever"
+version = "0.6"
+summary = "Easy way to make anonymous functions by partial application of operators."
+
 [metadata]
 lock_version = "4.0"
-content_hash = "sha256:1f29313e88d0a938233998f8dbed1512628ac19b71a3119e12929d7c7352a9d4"
+content_hash = "sha256:1eb2fe41f0e00c560bfff17630923bc7bc1eec088ce60576e5e80d5608a5da71"
 
 [metadata.files]
 "funcy 1.17" = [
@@ -109,4 +114,7 @@ content_hash = "sha256:1f29313e88d0a938233998f8dbed1512628ac19b71a3119e12929d7c7
 "typing-extensions 4.3.0" = [
     {url = "https://files.pythonhosted.org/packages/9e/1d/d128169ff58c501059330f1ad96ed62b79114a2eb30b8238af63a2e27f70/typing_extensions-4.3.0.tar.gz", hash = "sha256:e6d2677a32f47fc7eb2795db1dd15c1f34eff616bcaf2cfb5e997f854fa1c4a6"},
     {url = "https://files.pythonhosted.org/packages/ed/d6/2afc375a8d55b8be879d6b4986d4f69f01115e795e36827fd3a40166028b/typing_extensions-4.3.0-py3-none-any.whl", hash = "sha256:25642c956049920a5aa49edcdd6ab1e06d7e5d467fc00e0506c44ac86fbfca02"},
+]
+"whatever 0.6" = [
+    {url = "https://files.pythonhosted.org/packages/af/13/7090ad3b095c1441524fe74943707deacd38b2e5cef05fde441ac742b98a/whatever-0.6.tar.gz", hash = "sha256:cb3fc7569f5b711972f89792b39d9a07e7db76cff73a1ee8c8e505685f19d8dc"},
 ]
