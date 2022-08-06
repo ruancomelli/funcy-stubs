@@ -1,12 +1,4 @@
-from pathlib import Path
-from typing import List
-
 from setuptools import setup
-
-
-def find_stubs(path: Path) -> List[Path]:
-    return sorted(path.rglob("*.ipy"))
-
 
 setup(
     name="funcy-stubs",
@@ -21,5 +13,5 @@ setup(
         'typing_extensions>=3.10.0; python_version<"3.10"',
         "funcy==1.17",
     ],
-    package_data={"funcy-stubs": find_stubs(Path("funcy-stubs"))},
+    package_data={"funcy-stubs": "funcy-stubs/**.pyi"},
 )
