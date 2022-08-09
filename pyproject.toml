@@ -1,6 +1,6 @@
 [project]
 name = "funcy-stubs"
-version = "0.1.0"
+version = "0.1.1"
 description = "Type stubs for funcy"
 authors = [
     {name = "Ruan Comelli", email = "ruancomelli@gmail.com"},
