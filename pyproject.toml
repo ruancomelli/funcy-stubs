@@ -14,6 +14,9 @@ readme = "README.md"
 license = {text = "BSD"}
 classifiers = [
     "License :: OSI Approved :: BSD License",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Stubs Only",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.7",
@@ -21,6 +24,12 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
 ]
+keywords = ["type-annotations", "mypy-stubs"]
+
+[project.urls]
+Homepage = "https://github.com/ruancomelli/funcy-stubs"
+Repository = "https://github.com/ruancomelli/funcy-stubs"
+Documentation = "https://github.com/ruancomelli/funcy-stubs"
 
 [project.optional-dependencies]
 
