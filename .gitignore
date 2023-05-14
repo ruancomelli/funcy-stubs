@@ -130,4 +130,4 @@ dmypy.json
 
 # Locally testing stubs
 .tmp
-.pdm.toml
+.pdm-python
