@@ -28,6 +28,7 @@ jobs:
       uses: pdm-project/setup-pdm@main
       with:
         python-version: ${{ matrix.python-version }}
+        cache: true
   
     - name: Install dependencies
       run: pdm install --dev
